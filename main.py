@@ -15,11 +15,11 @@ import plotly as pt
 
 @st.cache_data
 def load_data():
-    orders_df = pd.read_csv("/Users/yoonjihoon/market/data/order_random.csv")
-    products_df = pd.read_csv("/Users/yoonjihoon/market/data/products.csv")
-    order_products_prior_df = pd.read_csv("/Users/yoonjihoon/market/data/order_products_prior_random.csv")
-    aisles_df = pd.read_csv("/Users/yoonjihoon/market/data/aisles.csv")
-    departments_df = pd.read_csv("/Users/yoonjihoon/market/data/departments.csv")
+    orders_df = pd.read_csv("data/order_random.csv")
+    products_df = pd.read_csv("data/products.csv")
+    order_products_prior_df = pd.read_csv("data/order_products_prior_random.csv")
+    aisles_df = pd.read_csv("data/aisles.csv")
+    departments_df = pd.read_csv("data/departments.csv")
     
     return orders_df, products_df, order_products_prior_df, aisles_df, departments_df
 
